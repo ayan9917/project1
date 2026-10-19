@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Care - Image Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>🧠 Memory Care</h1>
+        <p>Image Memory Game</p>
+      </div>
+      <button id="newGameBtn" class="secondary">New Game</button>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><span>Level</span><strong id="level">1</strong></div>
+      <div class="stat"><span>Score</span><strong id="score">0</strong></div>
+      <div class="stat"><span>Lives</span><strong id="lives">❤️❤️❤️</strong></div>
+      <div class="stat"><span>Round</span><strong id="round">1</strong></div>
+    </section>
+
+    <section class="game-card">
+      <div id="message" class="message">Get ready…</div>
+
+      <div class="timer-wrap">
+        <div class="timer-label">Remember the image</div>
+        <div class="timer"><div id="timerBar"></div></div>
+        <div id="timerText">3 seconds</div>
+      </div>
+
+      <div id="imageArea" class="image-area">
+        <div class="placeholder">Preparing image…</div>
+      </div>
+
+      <div id="choicesArea" class="choices hidden">
+        <h2>Which image did you see?</h2>
+        <div id="choicesGrid" class="choices-grid"></div>
+      </div>
+
+      <div id="result" class="result"></div>
+    </section>
+
+    <section class="instructions">
+      <h2>How to play</h2>
+      <ol>
+        <li>Look carefully at the image.</li>
+        <li>The image disappears after the timer finishes.</li>
+        <li>Choose the correct image from the options.</li>
+        <li>Correct answers increase your score and difficulty.</li>
+        <li>Three wrong answers end the game.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
